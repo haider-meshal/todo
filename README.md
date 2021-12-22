@@ -3,6 +3,7 @@ This is a .NET Core Competency Test (API-driven Todo web application)
 ## Summary
 This is a competency test to develope a todo application implemented according to the Event Sourcing pattern. The application has two parts: .net core backend and nextjs front end.
 
+![Screenshot](event-sourcing.png)
 First, run the backend development server:
 
 ```bash

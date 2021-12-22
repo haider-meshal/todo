@@ -19,7 +19,7 @@ npm run dev
 yarn dev
 ```
 
- Open [http://localhost:8081](http://localhost:8081) and [http://localhost:8080](http://localhost:8080) with your browser to see the result.
+ Open [http://localhost:8081](http://localhost:8081) and [http://localhost:8080/swagger/index.html](http://localhost:8080/swagger/index.html) with your browser to see the result.
 
 ## Timesheet
 <table>

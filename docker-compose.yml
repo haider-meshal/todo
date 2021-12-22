@@ -1,0 +1,28 @@
+version: '3.5'
+
+services:
+  back:
+    build:
+      context: ./ToDo.API
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+    networks:
+      - integration
+    depends_on:
+      - db
+  front:
+    build:
+      context: ./frontend-nextjs
+      dockerfile: Dockerfile
+    ports:
+      - 8081:8080
+    networks:
+      - integration
+    environment:
+      - BACKEND=back
+    depends_on:
+      - back
+networks:
+    integration:
+        driver: bridge

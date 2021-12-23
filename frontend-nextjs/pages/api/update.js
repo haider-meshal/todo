@@ -5,7 +5,7 @@ export default async (req, res) => {
   let id = encodeURI(req.query.id);
   let todo = encodeURI(req.query.todo);
 
-  const url = `http://${process.env.BACKEND}:8080/update_todo`;
+  const url = `http://${process.env.BACKEND}:80/update_todo`;
   return fetch(url, {
     method: "PUT",
     headers: {

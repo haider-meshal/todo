@@ -3,7 +3,7 @@ export default async (req, res) => {
     return res.status(400).send("todo parameter required.");
   }
   let todo = req.query.todo;
-  const url = `http://${process.env.BACKEND}:8080/create_todo`;
+  const url = `http://${process.env.BACKEND}:80/create_todo`;
   return fetch(url, {
     method: "POST",
     headers: {

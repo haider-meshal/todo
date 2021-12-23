@@ -4,7 +4,7 @@ export default async (req, res) => {
   }
 
   let id = encodeURI(req.query.todo);
-  const url = `http://${process.env.BACKEND}:8080/delete_todo?id=${id}`;
+  const url = `http://${process.env.BACKEND}:80/delete_todo?id=${id}`;
   return fetch(url, {
     method: "DELETE",
     headers: {

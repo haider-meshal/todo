@@ -1,5 +1,5 @@
 export default async (req, res) => {
-    const url = `http://${process.env.BACKEND}:8080/list_todos`;
+    const url = `http://${process.env.BACKEND}:80/list_todos`;
 
     return fetch(url)
         .then(r => r.json())

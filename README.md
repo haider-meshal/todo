@@ -20,13 +20,15 @@ npm run dev
 yarn dev
 ```
 
-or run it in docker
+or run it in docker-composer
 
 ```bash
-docker-compose up
+docker-compose up -d --force-recreate
+# to clear images and containers
+docker-compose down --rmi all
 ```
 
- Open [http://localhost:8081](http://localhost:8081) and [http://localhost:8080/swagger/index.html](http://localhost:8080/swagger/index.html) with your browser to see the result.
+ Open [http://localhost:8081](http://localhost:8081) and [http://localhost:8084/swagger/index.html](http://localhost:8084/swagger/index.html) with your browser to see the result.
 
 ## Timesheet
 <table>
